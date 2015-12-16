@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='nose-partitioner',
@@ -8,8 +8,12 @@ setup(
     author_email='claud.coman@gmail.com',
     url='https://github.com/claudiu-coman/nose-partitioner',
     license='Apache 2.0',
-    packages=find_packages(),
+    entry_points={
+        'nose.plugins.0.10': [
+            'partitioner = partitioner:Partitioner'
+        ]
+    },
     zip_safe=False,
     install_requires=['nose>=1.3.0'],
-    keywords='nose partitioner nose-partitioner'
+    keywords='nose nosetests partitioner nose-partitioner'
 )

@@ -13,6 +13,7 @@ setup(
             'partitioner = partitioner:Partitioner'
         ]
     },
+    pymodules=['partitioner'],
     zip_safe=True,
     install_requires=['nose>=1.3.0'],
     keywords='nose nosetests partitioner nose-partitioner'

@@ -13,7 +13,7 @@ setup(
             'partitioner = partitioner:Partitioner'
         ]
     },
-    zip_safe=False,
+    zip_safe=True,
     install_requires=['nose>=1.3.0'],
     keywords='nose nosetests partitioner nose-partitioner'
 )
